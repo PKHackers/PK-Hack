@@ -1,23 +1,113 @@
 1 ICON "pk.ico"
+2 ICON "pile.ico"
+3 ICON "fobby.ico"
+4 ICON "ufo.ico"
+5 ICON "garbage.ico"
+6 ICON "closepresent.ico"
+7 ICON "openpresent.ico"
+8 ICON "butterfly.ico"                         
+9 ICON "lightbulb.ico"                        
+10 ICON "diamond.ico"
+11 ICON "phone.ico"
+12 ICON "wow.ico"
+13 ICON "sign.ico"
+14 ICON "scorp.ico"
+15 ICON "frog.ico"
+16 ICON "help.ico"
+17 ICON "mailbox.ico"
+18 ICON "tv.ico" 
 
-100 BITMAP "pkhack.bmp"
+99 BITMAP "bg.bmp"
 
-1000 WAVE "pkhack.wav"
-
+100 BITMAP "logo.bmp"
+101 BITMAP "open.bmp"
+102 BITMAP "close.bmp"
+103 BITMAP "find.bmp"
+104 BITMAP "apply.bmp"
+105 BITMAP "help.bmp"
+106 BITMAP "spaanr.bmp"
+107 BITMAP "spaanstepr.bmp"
+108 BITMAP "IPS.bmp"
+109 BITMAP "abc.bmp"
+110 BITMAP "123.bmp"
+111 BITMAP "up.bmp"
+112 BITMAP "ghost.bmp"
+1000 WAVE "pkhack.wav"                               
+1001 WAVE "shield.wav"
+1002 WAVE "enemydie.wav"
+1003 WAVE "eb_winboss.wav"
+1004 WAVE "window.wav"
+1005 WAVE "possess.wav"
+1006 WAVE "heal.wav"
 
 10000 DIALOG 10,10,250,120
 FONT 8, "MS Sans Serif"
 STYLE WS_POPUP
 BEGIN
 END
-
+                                         
 10001 DIALOG 10,10,250,120
 FONT 8, "MS Sans Serif"
 STYLE WS_POPUP|WS_BORDER|WS_CAPTION|WS_SYSMENU
 CAPTION "About"
 BEGIN
  LTEXT "PK Hack is programmed entirely by Tomato (tomato@starmen.net) and spaanoft (spaanoft@starmen.net)!  Thank you for using this program!  Please email any comments you have to us.  Also, check out the official site at 'www.starmen.net/pkhack/'!", -1,  10, 30, 290, 40
- LTEXT "Tomato would like to thank: \n   B'z, Steve Martin, Ki iro 5, Hiro, Hayami & Shigemori, ImaiMiki, Koyanagi Yuki, Kuraki Mai, reidman, Mel Brooks, and the Southern All Stars for tons of great music to help keep me entertained while coding deep into the night! \n   Also, thanks to the people of Japan for not kicking me out (yet)!  Wassssabi!", -1,10,65,290,50
- LTEXT "spaanoft would like to thank: \n   Tomato, reidman, and all of starmen.net in general, Borland/Inprise, Five Iron Frenzy, Umi for the voice sample, zsKnight, _demo_, and Pharos for ZSNES, whoever made 'Gimp'.  Thank you all!", -1,10, 115,290, 50
+ LTEXT "Tomato would like to thank: \n   Lots of people who helped, nobody who didn't help, Tomato, spaanoft, the creators of Food Fight, lots of musicians, and those people who believed Joe the Talking Toilet was real.  He's real you know, just like Santa, the Easter Fairy, and Bob Dole.", -1,10,65,290,50
+ LTEXT "spaanoft would like to thank: \n   Tomato, reidman, and all of starmen.net/moonside.net in general, Borland/Inprise, Five Iron Frenzy, Umi for the voice sample, zsKnight, _demo_, and Pharos for ZSNES, whoever made 'Gimp'.  Thank you all!", -1,10, 100,290, 50
+ LTEXT "See Help files for more stuff like this that nobody actually reads but we put in here anyway", -1, 10,145,290,50
+END
+
+10002 DIALOG 10,10,150,55
+FONT 9, "MS Sans Serif"
+STYLE WS_POPUP|WS_BORDER|WS_CAPTION|WS_SYSMENU
+CAPTION "Search"
+BEGIN
+ LTEXT "Search in Enemy Names:", -1,  5, 5, 110, 15
+ EDITTEXT 1,9,20,125,12, 0
+ DEFPUSHBUTTON "OK" 2,20,35,50,15
+ PUSHBUTTON "Cancel" 3,75,35,50,15
+END
+
+10003 DIALOG 10,10,150,55
+FONT 9, "MS Sans Serif"
+STYLE WS_POPUP|WS_BORDER|WS_CAPTION|WS_SYSMENU
+CAPTION "Search"      
+BEGIN
+ LTEXT "Search in Item Names:", -1,  5, 5, 110, 15
+ EDITTEXT 1,9,20,125,12, 0
+ DEFPUSHBUTTON "OK" 2,20,35,50,15
+ PUSHBUTTON "Cancel" 3,75,35,50,15
+END
+
+10004 DIALOG 10,10,225,105
+FONT 9, "MS Sans Serif"
+STYLE WS_POPUP|WS_BORDER|WS_CAPTION|WS_SYSMENU
+CAPTION "Create IPS"
+BEGIN
+ LTEXT "Un-edited ROM to compare against:", -1,  5, 5, 150, 15
+ EDITTEXT 1,9,20,150,12, ES_AUTOHSCROLL
+ PUSHBUTTON "Browse" 2, 163,20,30,12
+
+ LTEXT "IPS file to save to:", -1,  5, 40, 150, 15
+ EDITTEXT 3,9,55,150,12, ES_AUTOHSCROLL
+ PUSHBUTTON "Browse" 4, 163,55,30,12
+
+ DEFPUSHBUTTON "Create IPS" 5,20,85,50,15
+ PUSHBUTTON "Done" 6,85,85,50,15
+END
+
+10005 DIALOG 15,15,100,50
+FONT 9, "MS Sans Serif"
+STYLE WS_POPUP|WS_BORDER|WS_CAPTION
+CAPTION "Creating IPS"
+BEGIN
+ LTEXT "Working", 1, 10,10, 100, 21
+END
+                                               
+738 DIALOG 0,0,250,250
+FONT 8, "MS Sans Serif"
+STYLE WS_POPUP|WS_BORDER|WS_CAPTION|WS_SYSMENU
+CAPTION "PK Hack"
+BEGIN
 END
 
