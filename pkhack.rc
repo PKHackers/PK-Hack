@@ -1,0 +1,23 @@
+1 ICON "pk.ico"
+
+100 BITMAP "pkhack.bmp"
+
+1000 WAVE "pkhack.wav"
+
+
+10000 DIALOG 10,10,250,120
+FONT 8, "MS Sans Serif"
+STYLE WS_POPUP
+BEGIN
+END
+
+10001 DIALOG 10,10,250,120
+FONT 8, "MS Sans Serif"
+STYLE WS_POPUP|WS_BORDER|WS_CAPTION|WS_SYSMENU
+CAPTION "About"
+BEGIN
+ LTEXT "PK Hack is programmed entirely by Tomato (tomato@starmen.net) and spaanoft (spaanoft@starmen.net)!  Thank you for using this program!  Please email any comments you have to us.  Also, check out the official site at 'www.starmen.net/pkhack/'!", -1,  10, 30, 290, 40
+ LTEXT "Tomato would like to thank: \n   B'z, Steve Martin, Ki iro 5, Hiro, Hayami & Shigemori, ImaiMiki, Koyanagi Yuki, Kuraki Mai, reidman, Mel Brooks, and the Southern All Stars for tons of great music to help keep me entertained while coding deep into the night! \n   Also, thanks to the people of Japan for not kicking me out (yet)!  Wassssabi!", -1,10,65,290,50
+ LTEXT "spaanoft would like to thank: \n   Tomato, reidman, and all of starmen.net in general, Borland/Inprise, Five Iron Frenzy, Umi for the voice sample, zsKnight, _demo_, and Pharos for ZSNES, whoever made 'Gimp'.  Thank you all!", -1,10, 115,290, 50
+END
+
