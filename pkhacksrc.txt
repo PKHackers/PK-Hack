@@ -1,0 +1,44 @@
+PK Hack .2 source code
+by spaanoft (spaanoft@starmen.net) and Tomato (tomato@starmen.net)
+http://www.starmen.net/pkhack
+
+After 9 months or so we're finally releasing the source code. We planned to do it earlier
+but:
+
+ - we got lazy
+ - we forgot
+ - we got too busy in real life
+ - Nintendo wanted to buy the source (okay, not really)
+
+spaanoft got this to compile with Borland C++. Tomato tried (although not very hard) to
+get it to compile with MS Visual C++ but didn't get it to work.
+
+The Windows code was written by spaanoft, using C, none of that goofy MFC stuff. He had
+no visual editors or anything which made things tougher, especially since Tomato wanted
+some cool looking stuff.
+
+Tomato wrote all the ROM editing code, which was written in C++. He tested it and wrote it
+for the DJGPP compiler which is free (http://www.delorie.com).
+
+It's highly doubtful anybody will use this source code for anything, but we're releasing it
+for those curious people. And who knows, maybe somebody out there will make a better
+EarthBound ROM editor using this source code for a basis. You can find pretty much all
+the program code (Windows GUI and ROM hacking) in Project2.cpp.
+
+If you're interested, we're also releasing a zip file containing a boatload of source code
+that Tomato wrote. A lot of this code was used in PK Hack but a lot never was included
+due to the reasons listed above. If you're a programmer you can use this code for EB
+ROM hacking projects. You can find it in the download section of the PK Hack site, URL
+listed above.
+
+It's highly doubtful we'll ever work on new versions of PK Hack. So if you want the EB
+ROM hacking "community" (it's not THAT big but it's got a following) to stay around, try
+making your own hacking progs!
+
+Okay, adios!
+
+- Tomato -
+  April 18, 2001
+
+P.S. As you can see Joe the Talking Toilet was going to be included! But spaanoft didn't
+     want him in :(
